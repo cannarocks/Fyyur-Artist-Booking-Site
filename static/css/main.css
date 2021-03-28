@@ -151,6 +151,11 @@ p > i {
 .seeking > button {
   margin-left: 15px;
 }
+
+.seeking > .lead
+{
+  margin-top: 0;
+}
 .description {
   max-width: 450px;
 }
