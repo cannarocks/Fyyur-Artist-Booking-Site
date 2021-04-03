@@ -79,7 +79,8 @@ class VenueForm(FlaskForm):
             ('WV', 'WV'),
             ('WI', 'WI'),
             ('WY', 'WY'),
-        ]
+        ],
+        default='AK'
     )
     address = StringField(
         'address', validators=[DataRequired()]
@@ -119,7 +120,7 @@ class VenueForm(FlaskForm):
         'facebook_link', validators=[URL()]
     )
     website_link = StringField(
-        'website_link'
+        'website_link', validators=[URL()]
     )
 
     seeking_talent = BooleanField('seeking_talent')
